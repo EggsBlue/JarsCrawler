@@ -1,0 +1,25 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+    <filter-name>nutz</filter-name>
+    <filter-class>org.nutz.mvc.NutFilter</filter-class>
+    <init-param>
+      <param-name>modules</param-name>
+      <param-value>com.yixin.MainModule</param-value>
+    </init-param>
+    <init-param>
+      <param-name>ignore</param-name>
+      <param-value>^(.+[.])(html|png|gif|jpg|js|css|jspx|jpeg|ftl|jsp|ico)$</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>nutz</filter-name>
+    <url-pattern>/*</url-pattern>
+    <!-- ForwardView需要下面的配置 @Ok("->:/xxx/yyy/zzz") -->
+  </filter-mapping>
+
+</web-app>
