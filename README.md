@@ -8,4 +8,5 @@
 - 启动服务即可
 
 *注意只能固定http://maven.aliyun.com/nexus/content/groups/public/ 开头,即http://maven.aliyun.com/nexus/content/groups/public/xxx 这个目录规则*
+
 *该项目仅供学习交流*
